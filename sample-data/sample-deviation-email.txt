@@ -1,0 +1,7 @@
+Subject: Deviation notification - API-240617 temperature excursion
+
+During the manufacturing process for API-Compound-X batch API-240617,
+the reactor temperature went above the approved range of 78–82°C.
+The temperature reached 86°C for around 12 minutes in Reactor R-204.
+The heating step was stopped and QA was notified.
+Please initiate a deviation assessment.

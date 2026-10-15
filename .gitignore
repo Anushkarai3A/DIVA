@@ -1,0 +1,22 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.venv/
+venv/
+uploads/*
+!uploads/.gitkeep
+.idea/
+.vscode/
+.DS_Store
+*.log
+.pytest_cache/
+# local-only documents & scratch scripts
+plan.md
+PROJECT_OVERVIEW.md
+backend/_c4_verify.py
+backend/_e2e_verify.py
+backend/package-lock.json

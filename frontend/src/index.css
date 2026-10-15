@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: light;
+
+    /* shadcn theme variables (light = approved DIVA UI) */
+    --background: hsl(0 0% 100%);
+    --foreground: hsl(215 25% 27%);
+    --card: hsl(0 0% 100%);
+    --card-foreground: hsl(213 64% 21%);
+    --primary: hsl(221 83% 53%);
+    --primary-foreground: hsl(0 0% 100%);
+    --secondary: hsl(210 40% 96%);
+    --secondary-foreground: hsl(215 25% 27%);
+    --muted: hsl(210 40% 96%);
+    --muted-foreground: hsl(215 14% 47%);
+    --accent: hsl(210 40% 96%);
+    --accent-foreground: hsl(215 25% 27%);
+    --destructive: hsl(0 84% 60%);
+    --destructive-foreground: hsl(0 0% 100%);
+    --border: hsl(215 25% 91%);
+    --input: hsl(215 25% 91%);
+    --ring: hsl(221 83% 53%);
+    --radius: 0.5rem;
+
+    /* DIVA design tokens (light) */
+    --page: #f7f9fc;
+    --surface: #ffffff;
+    --surface-secondary: #f8fafc;
+    --surface-muted: #f1f5f9;
+    --navbar: #ffffff;
+    --navbar-border: #e5e7eb;
+    --heading: #172554;
+    --body: #334155;
+    --fg-secondary: #64748b;
+    --fg-muted: #94a3b8;
+    --fg-soft: #475569;
+    --fg-detail: #1e293b;
+    --fg-strong: #0f172a;
+    --border-soft: #e5eaf1;
+    --border-strong: #cbd5e1;
+    --divider: #f1f5f9;
+    --brand: #2563eb;
+    --brand-hover: #1d5fe9;
+    --brand-soft: #93b4f7;
+    --ai: #eff6ff;
+    --ai-border: #dbeafe;
+    --ai-a50: rgba(239, 246, 255, 0.5);
+    --ai-a60: rgba(239, 246, 255, 0.6);
+    --surface-secondary-a60: rgba(248, 250, 252, 0.6);
+    --info-fg: #1e3a8a;
+    --info-border: #bfdbfe;
+    --success: #16a34a;
+    --success-surface: #ecfdf5;
+    --success-border: #a7f3d0;
+    --success-strong: #064e3b;
+    --success-fg: #047857;
+    --success-chip-bg: #d1fae5;
+    --success-chip-fg: #065f46;
+    --success-btn: #059669;
+    --success-btn-hover: #047857;
+    --warning: #d97706;
+    --warning-surface: #fffbeb;
+    --warning-chip-bg: #fef3c7;
+    --warning-strong: #b45309;
+    --warning-stronger: #78350f;
+    --warning-border: #fde68a;
+    --high-bg: #ffedd5;
+    --critical: #dc2626;
+    --critical-surface: #fef2f2;
+    --critical-chip-bg: #fee2e2;
+    --critical-border: #fecaca;
+    --critical-border-strong: #f87171;
+    --critical-strong: #7f1d1d;
+    --neutral: #94a3b8;
+    --hover: #f7f9fc;
+    --input-bg: #ffffff;
+    --overlay: rgba(0, 0, 0, 0.5);
+    --shadow-color: rgba(15, 23, 42, 0.18);
+  }
+
+  .dark {
+    color-scheme: dark;
+
+    /* shadcn theme variables (dark) */
+    --background: #0f172a;
+    --foreground: #f8fafc;
+    --card: #1e293b;
+    --card-foreground: #f8fafc;
+    --primary: #3b82f6;
+    --primary-foreground: #ffffff;
+    --secondary: #243244;
+    --secondary-foreground: #f8fafc;
+    --muted: #243244;
+    --muted-foreground: #94a3b8;
+    --accent: #243244;
+    --accent-foreground: #f8fafc;
+    --destructive: #ef4444;
+    --destructive-foreground: #ffffff;
+    --border: #334155;
+    --input: #334155;
+    --ring: #3b82f6;
+
+    /* DIVA design tokens (dark) */
+    --page: #0f172a;
+    --surface: #1e293b;
+    --surface-secondary: #243244;
+    --surface-muted: #334155;
+    --navbar: #111827;
+    --navbar-border: #334155;
+    --heading: #f8fafc;
+    --body: #f8fafc;
+    --fg-secondary: #cbd5e1;
+    --fg-muted: #94a3b8;
+    --fg-soft: #cbd5e1;
+    --fg-detail: #f8fafc;
+    --fg-strong: #f8fafc;
+    --border-soft: #334155;
+    --border-strong: #475569;
+    --divider: #334155;
+    --brand: #3b82f6;
+    --brand-hover: #2563eb;
+    --brand-soft: #3b82f6;
+    --ai: #172554;
+    --ai-border: #334155;
+    --ai-a50: rgba(23, 37, 84, 0.5);
+    --ai-a60: rgba(23, 37, 84, 0.6);
+    --surface-secondary-a60: rgba(36, 50, 68, 0.6);
+    --info-fg: #93c5fd;
+    --info-border: #334155;
+    --success: #22c55e;
+    --success-surface: #052e16;
+    --success-border: #166534;
+    --success-strong: #86efac;
+    --success-fg: #6ee7b7;
+    --success-chip-bg: #052e16;
+    --success-chip-fg: #86efac;
+    --success-btn: #16a34a;
+    --success-btn-hover: #22c55e;
+    --warning: #f59e0b;
+    --warning-surface: #451a03;
+    --warning-chip-bg: #451a03;
+    --warning-strong: #fcd34d;
+    --warning-stronger: #fde68a;
+    --warning-border: #92400e;
+    --high-bg: #451a03;
+    --critical: #ef4444;
+    --critical-surface: #450a0a;
+    --critical-chip-bg: #450a0a;
+    --critical-border: #7f1d1d;
+    --critical-border-strong: #ef4444;
+    --critical-strong: #fca5a5;
+    --neutral: #94a3b8;
+    --hover: #243244;
+    --input-bg: #172033;
+    --overlay: rgba(2, 6, 23, 0.7);
+    --shadow-color: rgba(0, 0, 0, 0.45);
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  .dark {
+    --tw-ring-offset-color: #0f172a;
+  }
+
+  .dark *,
+  .dark *::before,
+  .dark *::after {
+    --tw-ring-offset-color: #0f172a;
+  }
+}
+
+/* subtle theme transition, enabled only while switching themes */
+@media (prefers-reduced-motion: no-preference) {
+  html.theme-anim,
+  html.theme-anim *,
+  html.theme-anim *::before,
+  html.theme-anim *::after {
+    transition: background-color 180ms ease, border-color 180ms ease, color 180ms ease,
+      fill 180ms ease, stroke 180ms ease !important;
+  }
+}
